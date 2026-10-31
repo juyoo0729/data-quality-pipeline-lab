@@ -1,0 +1,25 @@
+name: Data quality checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest -v
+      - run: python run_demo.py --output runs/ci
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-quality-${{ matrix.python-version }}
+          path: |
+            runs/ci/**/*.json
+            runs/ci/**/*.jsonl
+            runs/ci/**/*.md
+            runs/ci/**/*.csv
