@@ -1,0 +1,4 @@
+{"record": 1, "raw": {"order_id": "ORDER-001", "order_date": "2026-02-30", "quantity": "2", "unit_price": "12.50"}, "reason": "order_date"}
+{"record": 2, "raw": {"order_id": "ORDER-002", "order_date": "2026-01-15", "quantity": "", "unit_price": "12.50"}, "reason": "quantity"}
+{"record": 3, "raw": {"order_id": "ORDER-004", "order_date": "2026-01-15", "quantity": "2", "unit_price": "12.50"}, "normalized": {"order_id": "ORDER-004", "order_date": "2026-01-15", "quantity": 2, "unit_price_cents": 1250}, "reason": "duplicate_order_id"}
+{"record": 4, "raw": {"order_id": "ORDER-004", "order_date": "2026-01-15", "quantity": "2", "unit_price": "12.50"}, "normalized": {"order_id": "ORDER-004", "order_date": "2026-01-15", "quantity": 2, "unit_price_cents": 1250}, "reason": "duplicate_order_id"}

@@ -1,0 +1,6 @@
+[project]
+name = "data-quality-pipeline-lab"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "CSV quality gates, quarantine and idempotent transactional loading"
+dependencies = []

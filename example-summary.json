@@ -1,0 +1,78 @@
+{
+  "python": "3.11.15",
+  "final_rows": 10,
+  "phases": [
+    {
+      "source_file": "bad.csv",
+      "source_sha256": "e9f4ab94ef58fb4e47fcbf46712d20c0dee75f347b09780173aea34cb9dbb3d9",
+      "code_sha256": "4854fcb1f2e0866e03df3708817d8d698fa31667994e45b8a679cf02c6a98d72",
+      "total_records": 10,
+      "valid_records": 6,
+      "rejected_records": 4,
+      "error_rate": 0.4,
+      "max_error_rate": 0.2,
+      "fatal_errors": [],
+      "status": "blocked",
+      "inserted": 0,
+      "skipped": 0
+    },
+    {
+      "source_file": "corrected.csv",
+      "source_sha256": "c4a9238043c4381551fc34ee8a44aba1339902bbb4601582fc375f58d147eaab",
+      "code_sha256": "4854fcb1f2e0866e03df3708817d8d698fa31667994e45b8a679cf02c6a98d72",
+      "total_records": 10,
+      "valid_records": 10,
+      "rejected_records": 0,
+      "error_rate": 0.0,
+      "max_error_rate": 0.2,
+      "fatal_errors": [],
+      "status": "loaded",
+      "inserted": 10,
+      "skipped": 0
+    },
+    {
+      "source_file": "corrected.csv",
+      "source_sha256": "c4a9238043c4381551fc34ee8a44aba1339902bbb4601582fc375f58d147eaab",
+      "code_sha256": "4854fcb1f2e0866e03df3708817d8d698fa31667994e45b8a679cf02c6a98d72",
+      "total_records": 10,
+      "valid_records": 10,
+      "rejected_records": 0,
+      "error_rate": 0.0,
+      "max_error_rate": 0.2,
+      "fatal_errors": [],
+      "status": "loaded",
+      "inserted": 0,
+      "skipped": 10
+    },
+    {
+      "source_file": "conflict.csv",
+      "source_sha256": "34b0a60fd1cef3ca7daa9ccdb388bf57b6e6d1d876033dacd6b960466dae0c8a",
+      "code_sha256": "4854fcb1f2e0866e03df3708817d8d698fa31667994e45b8a679cf02c6a98d72",
+      "total_records": 2,
+      "valid_records": 2,
+      "rejected_records": 0,
+      "error_rate": 0.0,
+      "max_error_rate": 0.2,
+      "fatal_errors": [
+        "destination_conflict:ORDER-001"
+      ],
+      "status": "blocked",
+      "inserted": 0,
+      "skipped": 0
+    },
+    {
+      "source_file": "corrected.csv",
+      "source_sha256": "c4a9238043c4381551fc34ee8a44aba1339902bbb4601582fc375f58d147eaab",
+      "code_sha256": "4854fcb1f2e0866e03df3708817d8d698fa31667994e45b8a679cf02c6a98d72",
+      "total_records": 10,
+      "valid_records": 10,
+      "rejected_records": 0,
+      "error_rate": 0.0,
+      "max_error_rate": 0.2,
+      "fatal_errors": [],
+      "status": "loaded",
+      "inserted": 0,
+      "skipped": 10
+    }
+  ]
+}
